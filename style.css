@@ -1,0 +1,40 @@
+body {
+    background-color: #808080;
+}
+
+.title-container {
+    border-bottom: 4px dotted black;
+    
+}
+
+.main-container {
+    height: 350px;
+    border-bottom: 4px dotted black;
+    margin: auto;
+    padding: 70px 0;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 68px;
+}
+
+#subtitle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px
+}
+
+#time-display {
+    margin-top: 75px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+}
+
+#date-display {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+}
