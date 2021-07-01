@@ -2,10 +2,6 @@
 const timeDisplay = document.getElementById('time-display');
 const dateDisplay = document.getElementById('date-display');
 
-
-
-
-
 function tickingClock() {
     const today = new Date;
     const minute = leadingZero(today.getMinutes());
@@ -38,9 +34,6 @@ function get12HourTime(militaryTime) {
     } else return militaryTime;
 }
 
-
-
-    
 const daysIndex = ["Sunday", "Monday", "Tuesday", "Wednesday",
                             "Thursday,", "Friday", "Saturday"];
         
