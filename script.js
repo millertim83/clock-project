@@ -1,12 +1,13 @@
 
 const timeDisplay = document.getElementById('time-display');
 const dateDisplay = document.getElementById('date-display');
-const today = new Date;
+
 
 
 
 
 function tickingClock() {
+    const today = new Date;
     const minute = leadingZero(today.getMinutes());
     const seconds = leadingZero(today.getSeconds());    
     const militaryTime = today.getHours();
@@ -41,7 +42,7 @@ function get12HourTime(militaryTime) {
 
     
 const daysIndex = ["Sunday", "Monday", "Tuesday", "Wednesday",
-                            "Thursday,", "Friday", "Saturday"];
+                            "Thursday", "Friday", "Saturday"];
         
 
 const monthsIndex = ["January", "February", "March", "April", "May", "June", "July",
@@ -50,16 +51,16 @@ const monthsIndex = ["January", "February", "March", "April", "May", "June", "Ju
             
 function dateWithSuffix(date) {
         if (date == 1 || date == 21 || date == 31) {
-            return dayOfMonth + "st";
+            return date + "st";
         } else if (date == 2 || date == 22) {
-            return dayOfMonth + "nd";
+            return date + "nd";
         } else if (date == 3 || date == 23) {
             return date + "rd";
         } else return date + "th";
 }
  
 tickingClock();
-setInterval(tickingClock(), 1000);
+setInterval(tickingClock, 1000);
 
 
 
