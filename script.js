@@ -33,6 +33,19 @@ function renderDate() {
 
 }
 
+function dateWithSuffix(date) {
+    if (date < 10 || date > 20) {
+        switch (date % 10) {
+            case 1:
+                return `${date}st`;
+            case 2:
+                return `${date}nd`;
+            case 3:
+                return `${date}rd`;
+        }
+    }
+    return `${date}th`;
+}
 
 const daysIndex = ["Sunday", "Monday", "Tuesday", "Wednesday",
                             "Thursday", "Friday", "Saturday"];
