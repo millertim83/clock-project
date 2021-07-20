@@ -21,8 +21,6 @@ function leadingZero(number) {
     return number < 10 ? '0' + number : number;
 }
 
-
-
 function renderDate() {
     const dateDisplay = document.getElementById('date-display');
     const today = new Date;
@@ -37,30 +35,28 @@ function renderDate() {
 
 
 const daysIndex = ["Sunday", "Monday", "Tuesday", "Wednesday",
-                            "Thursday,", "Friday", "Saturday"];
+                            "Thursday", "Friday", "Saturday"];
         
 
 const monthsIndex = ["January", "February", "March", "April", "May", "June", "July",
                             "August", "September", "October", "November", "December"];
         
-            
-function dateWithSuffix(date) {
-    if (date < 10 || date > 20) {
-        switch (date % 10) {
-            case 1:
-                return `${date}st`;
-            case 2:
-                return `${date}nd`;
-            case 3:
-                return `${date}rd`;
-        }
-    }
-   return `${date}th`;    
-}
- 
 renderClock();
 renderDate();
 setInterval(() => {
     renderClock();
     renderDate(); 
 }, 1000);
+       
+
+
+
+
+
+    
+
+
+
+
+
+
