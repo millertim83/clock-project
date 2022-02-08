@@ -1,32 +1,41 @@
 body {
-    background-color: #808080;
+    background-color: #041D3E;
 }
 
 .title-container {
-    border-bottom: 4px dotted black;
+    border-bottom: 4px dotted #79C019;
     
 }
 
 .main-container {
+    background-color: ;
     height: 350px;
-    border-bottom: 4px dotted black;
+    border-bottom: 4px dotted #79C019;
     margin: auto;
     padding: 70px 0;
 }
 
 #title {
+    color: #79C019;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 64px;
 }
 
 #subtitle {
+    color: #79C019;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 48px
 }
 
 #time-display {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #1E6194;
+    color: #79C019;
+    border: 2px dotted #79C019;
+    border-radius: 8px;
     margin-top: 75px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -34,6 +43,12 @@ body {
 }
 
 #date-display {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #1E6194;
+    color: #79C019;
+    border: 2px dotted #79C019;
+    border-radius: 8px;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 54px;
